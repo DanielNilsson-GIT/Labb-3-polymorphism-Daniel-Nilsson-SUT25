@@ -9,10 +9,10 @@ namespace Labb_3_polymorphism_Daniel_Nilsson_SUT25
     internal class Geometry
     {
         
-        public double Area()
+        public virtual double Area()
         {
-
-            return 
+            double answer=0;
+            return answer;
         }
     }
 }
