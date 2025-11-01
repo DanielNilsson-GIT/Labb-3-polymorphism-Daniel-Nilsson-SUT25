@@ -14,7 +14,7 @@
             
             foreach (var item in shapeslist)
             {
-                Console.WriteLine(item.Area());
+                Console.Write(item.Area()+"\n");
             }
             
         }

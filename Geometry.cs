@@ -10,10 +10,10 @@ namespace Labb_3_polymorphism_Daniel_Nilsson_SUT25
     {
         protected virtual string Type { get; }//Experimented with acces-modifiers to see what they do. 
 
-        public virtual double Area()
+        public virtual double Area()//By making this method "virtual" it is possible to override it in subclasses, thus enabling polymorphism.
         {
-            Console.WriteLine("Area for " +Type + ": ");
             double answer = 0;
+            Console.Write("Area for " +Type + ": ");
             return answer;
         }
     }
