@@ -4,7 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+            Geometry circle = new Circle();
+            Geometry square = new Square();
+            Geometry rectangle = new Rectangle();
+
+            List<Geometry> shapeslist = new List<Geometry> { circle, square, rectangle };
+
+            
+            foreach (var item in shapeslist)
+            {
+                Console.Write(item.Area()+"\n");
+            }
+            
         }
+
     }
 }
