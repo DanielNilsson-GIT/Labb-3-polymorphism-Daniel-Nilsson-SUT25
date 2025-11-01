@@ -5,13 +5,17 @@
         static void Main(string[] args)
         {
             
-            Circle circle = new Circle(2);
-            Geometry square = new Square(2);
-            Geometry rectangle = new Rectangle(2,3);
+            Geometry circle = new Circle();
+            Geometry square = new Square();
+            Geometry rectangle = new Rectangle();
 
-            Console.WriteLine("Cirkel: " + circle.Area());
-            Console.WriteLine("Kvadrat: " + square.Area());
-            Console.WriteLine("Rektangel: " + rectangle.Area());
+            List<Geometry> shapeslist = new List<Geometry> { circle, square, rectangle };
+
+            
+            foreach (var item in shapeslist)
+            {
+                Console.WriteLine(item.Area());
+            }
             
         }
 

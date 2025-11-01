@@ -8,10 +8,12 @@ namespace Labb_3_polymorphism_Daniel_Nilsson_SUT25
 {
     internal class Geometry
     {
-        
+        protected virtual string Type { get; }//Experimented with accesmodifiers to see what they do. 
+
         public virtual double Area()
         {
-            double answer=0;
+            Console.WriteLine("Area for " +Type + ": ");
+            double answer = 0;
             return answer;
         }
     }

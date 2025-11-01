@@ -9,10 +9,11 @@ namespace Labb_3_polymorphism_Daniel_Nilsson_SUT25
     internal class Square:Geometry
     {
         public double Side { get; set; }
-        
-        public Square(double side)
+
+        protected override string Type { get;} = "Square";
+        public Square()
         {
-            Side = side;
+            Side = 5;
         }
         public override double Area()
         {
