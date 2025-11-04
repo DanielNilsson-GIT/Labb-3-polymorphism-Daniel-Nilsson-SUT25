@@ -14,9 +14,12 @@
             
             foreach (var item in shapeslist)
             {
-                Console.Write(item.Area()+"\n");
+                Console.Write(item.Area()+"\n");//By calling each object and using the Area()-method, the method changes depending on object.
+                                                //This is because the method got polymorphed with virtual/override in each object.
             }
+
             
+
         }
 
     }
