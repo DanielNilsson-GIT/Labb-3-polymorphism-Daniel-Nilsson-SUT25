@@ -16,8 +16,9 @@
             {
                 Console.Write(item.Area()+"\n");//By calling each object and using the Area()-method, the method changes depending on object.
                                                 //This is because the method got polymorphed with virtual/override in each object.
+                                                //This would be a runtime polymorphism becase the CLR will choose correct method when running program.
             }
-
+            //If there was a overloaded method wth diffret amount of in-parameters it would be a compiletime polymorphism
             
 
         }
